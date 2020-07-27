@@ -31,7 +31,7 @@ function IndexHeader() {
         className="page-header section-dark"
         style={{
           backgroundImage:
-            "url(" + require("assets/img/antoine-barres.jpg") + ")",
+            "url(" + require("assets/img/bg.PNG") + ")",
         }}
       >
         <div className="filter" />
@@ -39,24 +39,13 @@ function IndexHeader() {
           <Container>
             <div className="title-brand">
               <h1 className="presentation-title">Diet Cloud</h1>
-              <div className="fog-low">
-                <img alt="..." src={require("assets/img/fog-low.png")} />
-              </div>
-              <div className="fog-low right">
-                <img alt="..." src={require("assets/img/fog-low.png")} />
-              </div>
-            </div>
+               </div>
             <h2 className="presentation-subtitle text-center">
-              You are what you Eat!
+              You are what you Eat...
             </h2>
           </Container>
         </div>
-        <div
-          className="moving-clouds"
-          style={{
-            backgroundImage: "url(" + require("assets/img/clouds.png") + ")",
-          }}
-        />
+        
        
       </div>
     </>

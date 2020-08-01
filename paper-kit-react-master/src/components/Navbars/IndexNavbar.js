@@ -30,6 +30,7 @@ import {
   Nav,
   Container,
 } from "reactstrap";
+import { Link } from "react-router-dom";
 
 function IndexNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
@@ -62,6 +63,7 @@ function IndexNavbar() {
     };
   });
   return (
+   
     <Navbar className={classnames("fixed-top", navbarColor)} expand="lg">
       <Container>
         <div className="navbar-translate">
@@ -123,6 +125,22 @@ function IndexNavbar() {
                 <i className="fa fa-instagram" />
                 <p className="d-lg-none">Instagram</p>
               </NavLink>
+            </NavItem>  
+            <NavItem active>
+              <NavLink  to="/aboutUS" tag={Link}
+                title="About Us"
+                target="_blank"
+              >
+               <p>About Us</p>
+              </NavLink>
+            </NavItem>
+            <NavItem active>
+              <NavLink  to="/contactUS" tag={Link}
+                title="Contact Us"
+                target="_blank"
+               >
+               <p>Contact Us</p>
+              </NavLink>
             </NavItem>
             <NavItem>
               <Button
@@ -139,6 +157,7 @@ function IndexNavbar() {
         </Collapse>
       </Container>
     </Navbar>
+   
   );
 }
 

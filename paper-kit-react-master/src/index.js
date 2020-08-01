@@ -27,8 +27,8 @@ import "assets/demo/demo.css?v=1.2.0";
 // pages
 import Index from "views/Index.js";
 import NucleoIcons from "views/NucleoIcons.js";
-import LandingPage from "views/examples/LandingPage";
-import ContactUs from "views/examples/ContactUs";
+import LandingPage from "components/LandingPage";
+import ContactUs from "components/ContactUs"
 
 
 // others
